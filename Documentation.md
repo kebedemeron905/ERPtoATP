@@ -29,4 +29,4 @@ The purpose of the integration is to create a purchase order in ERP, hash the pu
 
 
 Let's start by logging into the Oracle Integration Cloud platform.
-![Homepage](images/homepage1.1.png)
+![Homepage](Images/homepage1.1.png)
