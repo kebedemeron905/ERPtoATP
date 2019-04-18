@@ -28,7 +28,7 @@ The purpose of the integration is to create a purchase order in ERP, hash the pu
 
 
 
-## 1.1: CREATE A ERP CONNECTION 
+## 1.1: CREATE AN ERP CONNECTION 
 
 #### 1.1.1: Log into the Oracle Integration Cloud platform <br/>
 ![Homepage](Images/image1.1.png)
@@ -43,7 +43,7 @@ The purpose of the integration is to create a purchase order in ERP, hash the pu
 #### 1.1.4: Click on Create from the top right corner <br/>
 ![Homepage](Images/image1.4.png)<br/>
 
-#### 1.1.5: Search "Oracle ERP Cloud" in the Create Connection - Select Adapter dialogue box, and click on select <br/>
+#### 1.1.5: Search "Oracle ERP Cloud" in the Create Connection - Select Adapter dialogue box, and click select <br/>
 ![Homepage](Images/image1.5.png)<br/>
 
 #### 1.1.6: Enter a connection name, select Trigger and Invoke for Role, and click create <br/>
@@ -70,12 +70,47 @@ Note: Make sure you save first before closing. <br/>
 ![Homepage](Images/image1.12.png) <br/>
 
 #### 1.1.13: You'll see your ERP adapter appear under the list of connections <br/>
-![Homepage](Images/image1.13.png) <br/>
+![Homepage](Images/image1.13.1png) <br/>
 <br/>
 ***
 <br/>
 
-## 1.2: CREATE A ATP CONNECTION 
+## 1.2: CREATE AN ATP CONNECTION 
 
 #### 1.2.1: Click on Create from the top right corner <br/>
-![Homepage](Images/image1.13.png)
+![Homepage](Images/image1.13.png) <br/>
+
+#### 1.2.2: Search "Oracle ATP" in the Create Connection - Select Adapter dialogue box, and click select <br/>
+![Homepage](Images/image1.14.png)<br/>
+
+#### 1.2.3: Enter a connection name, select Invoke for Role, and click create <br/>
+![Homepage](Images/image1.15.png)<br/>
+
+#### 1.2.4: Click on Configure Connectivity <br/>
+![Homepage](Images/image1.16.png) <br/>
+
+#### 1.2.5: Enter Service Name, and click ok <br/>
+![Homepage](Images/image1.17.png) <br/>
+
+#### 1.2.6: Click on Configure Security <br/>
+![Homepage](Images/image1.17.png) <br/>
+
+#### 1.2.7: Upload wallet, provide wallet information, and click OK <br/>
+![Homepage](Images/image1.18.png) <br/>
+
+#### 1.2.8: Click on Test <br/>
+![Homepage](Images/image1.19.png) <br/>
+
+#### 1.2.9: Make sure the test is successful and shows 100%; click Save, and close. <br/>
+
+Note: Make sure you save first before closing. <br/>
+![Homepage](Images/image1.20.png) <br/>
+
+#### 1.2.10: You'll see your ATP adapter appear under the list of connections <br/>
+![Homepage](Images/image1.21.1png) <br/>
+<br/>
+***
+<br/>
+
+
+## 1.3: CREATE AN INTEGRATION
