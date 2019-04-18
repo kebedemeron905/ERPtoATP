@@ -70,7 +70,7 @@ Note: Make sure you save first before closing. <br/>
 ![Homepage](Images/image1.12.png) <br/>
 
 #### 1.1.13: You'll see your ERP adapter appear under the list of connections <br/>
-![Homepage](Images/image1.13.1png) <br/>
+![Homepage](Images/image1.13.1.png) <br/>
 <br/>
 ***
 <br/>
