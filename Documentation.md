@@ -107,7 +107,7 @@ Note: Make sure you save first before closing. <br/>
 ![Homepage](Images/image1.20.png) <br/>
 
 #### 1.2.10: You'll see your ATP adapter appear under the list of connections <br/>
-![Homepage](Images/image1.21.1png) <br/>
+![Homepage](Images/image1.21.png) <br/>
 <br/>
 ***
 <br/>
