@@ -150,8 +150,9 @@ NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 
 #### 1.3.9: Make sure the csf-key is successfully registered <br/>
 ![Homepage](Images/image1.31.png) <br/>
-
-
+<br/>
+***
+<br/>
 
 ## 1.4: CREATE AN INTEGRATION
 
@@ -182,14 +183,15 @@ NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 #### 1.4.9: In the Filter by Event Name field under Business Event For Subscription, search Purchase Order Event and select it <br/>
 ![Homepage](Images/image1.37.png) <br/>
 
-#### 1.4.10: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc
+#### 1.4.10: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc <br/>
+
+Copy and paste the above script in the Filter Expr for Purchase Order Event field and click Next <br/>
 
 ``` javascript 
-<xpathExpr xmlns:ns0="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/"              xmlns:ns2="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/types/">$eventPayload/ns2:result/ns0:Value/ns0:PurchaseOrderLine/ns0:ItemDescription="Doc"</xpathExpr>
+<xpathExpr xmlns:ns0="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/"           xmlns:ns2="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/types/">$eventPayload/ns2:result/ns0:Value/ns0:PurchaseOrderLine/ns0:ItemDescription="Doc"</xpathExpr>
 ```
 <br/>
 
-Copy and paste the above script in the field and click Next <br/>
 ![Homepage](Images/image1.38.png) <br/>
 
 
