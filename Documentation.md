@@ -185,7 +185,7 @@ NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 
 #### 1.4.10: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc <br/>
 
-Copy and paste the above script in the Filter Expr for Purchase Order Event field and click Next <br/>
+Copy and paste the script below in the Filter Expr for Purchase Order Event field and click Next <br/>
 
 ``` javascript 
 <xpathExpr xmlns:ns0="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/"           xmlns:ns2="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/types/">$eventPayload/ns2:result/ns0:Value/ns0:PurchaseOrderLine/ns0:ItemDescription="Doc"</xpathExpr>
@@ -195,5 +195,150 @@ Copy and paste the above script in the Filter Expr for Purchase Order Event fiel
 ![Homepage](Images/image1.38.png) <br/>
 
 
-#### 1.4.11: Select None in the response section <br/>
+#### 1.4.11: Select None in the response section, and click Next <br/>
 ![Homepage](Images/image1.39.png) <br/>
+
+#### 1.4.12: Click on Done in the Summary section <br/>
+![Homepage](Images/image1.40.png) <br/>
+
+#### 1.4.13: SAVE <br/>
+![Homepage](Images/image1.40.png) <br/>
+
+<br/>
+***
+<br/>
+
+
+#### 1.5: Hover on the grey line below the ERP adapter and click on the blue plus sign. Search you ATP adapter and click on it.<br/>
+![Homepage](Images/image1.43.png) <br/>
+
+#### 1.5.1: Configure the ATP adapter's Basic Info as follows, and click Next <br/>
+![Homepage](Images/image1.44.png) <br/>
+
+#### 1.5.2: Select your table Schema, and click Search <br/>
+![Homepage](Images/image1.45.png) <br/>
+
+#### 1.5.3: Move your table to the Selected field and click Import Tables. Click Next <br/>
+![Homepage](Images/image1.46.png) <br/>
+
+#### 1.5.4: Choose a primary key for your table and click OK <br/>
+![Homepage](Images/image1.47.png) <br/>
+
+#### 1.5.5: Click Next <br/>
+![Homepage](Images/image1.48.png) <br/>
+
+#### 1.5.6: Click Done <br/>
+![Homepage](Images/image1.49.png) <br/>
+
+#### 1.5.7: SAVE <br/>
+![Homepage](Images/image1.50.png) <br/>
+<br/>
+***
+<br/>
+
+#### 1.6: Click on the flag icon to the right of the page, and select the Assign action under Data <br/>
+![Homepage](Images/image1.42.png) <br/>
+
+#### 1.6.1: Drag and drop the Assign Action right below the ERP adapter <br/>
+![Homepage](Images/image1.51.png) <br/>
+
+#### 1.6.2: Provide action name and click Create <br/>
+![Homepage](Images/image1.52.png) <br/>
+
+#### 1.6.3: Click on the plus sign in the right corner <br/>
+![Homepage](Images/image1.53.png) <br/>
+
+#### 1.6.4: Provide a variable name, and click on the pencil icon under value <br/>
+![Homepage](Images/image1.54.png) <br/>
+
+#### 1.6.5: Expand the getPurchaseOrderResponse field, and drag and drop the OrderNumber value to the Expression field <br/>
+![Homepage](Images/image1.55.png) <br/>
+
+#### 1.6.6: Click Validate, and close <br/>
+![Homepage](Images/image1.56.png) <br/>
+
+#### 1.6.7: Validate again, and close <br/>
+![Homepage](Images/image1.57.png) <br/>
+  
+#### 1.6.8: SAVE <br/>
+![Homepage](Images/image1.58.png) <br/>
+
+<br/>
+***
+<br/>
+
+#### 1.7: Click on the flag sign on the right, and select Function under the call action <br/>
+![Homepage](Images/image1.59.png) <br/>
+
+#### 1.7.1: Drag and drop the Function action below the variable action <br/>
+![Homepage](Images/image1.60.png) <br/> 
+
+#### 1.7.2: Provide a name for the Function action, and click Create <br/>
+![Homepage](Images/image1.61.png) <br/> 
+
+### 1.7.3: Click on the Function icon to upload your custom script <br/>
+NOTE: Make sure your custom script is registered in OIC under Libraries first. <br/>
+
+![Homepage](Images/image1.62.png) <br/> 
+
+#### 1.7.4: Search for your custom script, and click select <br/>
+![Homepage](Images/image1.63.png) <br/> 
+
+#### 1.7.5: Click on the pencil icon under Value <br/>
+![Homepage](Images/image1.64.png) <br/> 
+
+#### 1.7.6: Drag and drop $POVariable_OrderNumber to the Expression field <br/>
+![Homepage](Images/image1.65.png) <br/> 
+
+#### 1.7.7: Click Validate, and close <br/>
+![Homepage](Images/image1.66.png) <br/>
+
+#### 1.7.8: Validate again, and close <br/>
+![Homepage](Images/image1.67.png) <br/>
+
+#### 1.7.9: SAVE <br/>
+![Homepage](Images/image1.68.png) <br/>
+
+<br/>
+***
+<br/>
+
+#### 1.8: Click on the mapper  <br/>
+![Homepage](Images/image1.69.png) <br/>
+
+#### 1.8.2: Click on the pencil icon  <br/>
+![Homepage](Images/image1.70.png) <br/>
+
+#### 1.8.3: Expand the Hash attribute, and map (drag and drop) output_Hash_result from the source field to hash on the target field <br/>
+![Homepage](Images/image1.71.png) <br/>
+
+#### 1.8.4: Expand the getPurchaseOrderResponse field, and map the appropriate vales between ERP (Sources), and ATP (PurchaseOrdersCollection) <br/>
+![Homepage](Images/image1.72.png) <br/>
+
+#### 1.8.5: Click Validate and Close  <br/>
+![Homepage](Images/image1.73.png) <br/>
+
+#### 1.8.6: SAVE <br/>
+![Homepage](Images/image1.74.png) <br/>
+
+<br/>
+***
+<br/>
+
+#### 1.9: To get rid of the red error notification, click on the hamburger icon on the top right <br/>
+![Homepage](Images/image1.75.png) <br/>
+
+#### 1.9.1: Choose Tracking from the options <br/>
+![Homepage](Images/image1.76.png) <br/>
+
+#### 1.9.2: Choose a primary value to track. Drag and drop it to the Tracking Field and Save <br/>
+![Homepage](Images/image1.77.png) <br/>
+
+#### 1.9.3: SAVE the whole integration, and click close <br/>
+![Homepage](Images/image1.78.png) <br/>
+
+#### 1.9.4: Activate the integration by moving the activation button to the right <br/>
+![Homepage](Images/image1.79.png) <br/>
+
+#### 1.9.5: Select Enable tracing and include payload. Click Activate.<br/>
+![Homepage](Images/image1.80.png) <br/>
