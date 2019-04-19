@@ -10,7 +10,7 @@ The purpose of the integration is to create a purchase order in ERP, hash the pu
 ## COMPONENTS COVERED
 
 * How to create and configure ERP and ATP connections in OIC
-* How to register an OIC instance in SOA Composer
+* How to generate a CSF key in SOA Composer
 * How to create an integration
 * Assign variables
 * Map attributes between ERP and ATP
@@ -113,4 +113,85 @@ Note: Make sure you save first before closing. <br/>
 <br/>
 
 
-## 1.3: CREATE AN INTEGRATION
+
+## 1.3: GENERATE A CSF KEY on SOA COMPOSER
+
+If you haven't done so before, you must create a CSF key to subscribe to events in Oracle ERP Cloud. This key is required by the event handler framework when it invokes the integration. The credentials of the integration are managed by the CSF key. Create the CSF key in Oracle SOA Composer. <br/>
+
+NOTE: The Oracle Integration Cloud Service user must exist in Oracle Integration Cloud Service and have been assigned the IntegrationServiceRuntime role. The CSF key entry in the Oracle ERP Cloud infrastructure stores the Oracle Integration Cloud Service credentials used by Oracle ERP Cloud. When Oracle Fusion Applications send outbound requests to Oracle Integration Cloud Service (at runtime), it sends the credentials (username and password) of this account for authentication. 
+
+Complete Documentation of how to generate a CSF key can be found [here](https://docs.oracle.com/en/cloud/paas/integration-cloud-service/icser/prerequisites-creating-connection.html#GUID-C179F26D-7409-43D7-B87B-E508A1DF7314).
+
+
+#### 1.3.1: Take your ERP domain name and append '/soa/composer' to it. Open in browser <br/>
+![Homepage](Images/image1.24.png) <br/>
+
+#### 1.3.2: Log into using your ERP credentials <br/>
+![Homepage](Images/image1.25.png) <br/>
+
+#### 1.3.3: Click on Manage Security in the top right corner <br/>
+![Homepage](Images/image1.26.png) <br/>
+
+#### 1.3.3: Provide the csf-key <br/>
+NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
+
+#### 1.3.4: The OIC identity domain name and the OIC service instance name can both be found in OIC. In OIC, click on the person icon in the top corner of the OIC page, and select About <br/>
+![Homepage](Images/image1.27.png) <br/>
+
+#### 1.3.5: Copy and paste the domain name and service instance name into SOA Composer <br/>
+![Homepage](Images/image1.28.png) <br/>
+
+
+#### 1.3.6: This is how the csf-key should look in SOA Composer <br/>
+![Homepage](Images/image1.29.png) <br/>
+
+#### 1.3.7: Enter the Oracle Integration Cloud Service user account with which you log in to Oracle Integration Cloud (not the user name created when you subscribed to Oracle ERP Cloud). Click Register <br/>
+![Homepage](Images/image1.30.png) <br/>
+
+#### 1.3.8: Make sure the csf-key is successfully registered <br/>
+![Homepage](Images/image1.21.png) <br/>
+
+
+
+## 1.4: CREATE AN INTEGRATION
+
+#### 1.4.1: In the OIC page, click on Integrations from the left side menu <br/>
+![Homepage](Images/image1.22.png) <br/>
+
+#### 1.4.2: Click on Create from the top right corner <br/>
+![Homepage](Images/image1.23.png) <br/>
+
+#### 1.4.3: Select App Driven Orchestration <br/>
+![Homepage](Images/image1.32.png) <br/>
+
+#### 1.4.4: Provide integration name, and description (optional), and click Create <br/>
+![Homepage](Images/image1.33.png) <br/>
+
+#### 1.4.5: Provide integration name, and description (optional), and click Create <br/>
+![Homepage](Images/image1.33.png) <br/>
+
+#### 1.4.6: Click on the blue plus sign under start and search for the ERP adapter you created <br/>
+![Homepage](Images/image1.34.png) <br/>
+
+#### 1.4.7: Provide endpoint name under Basic Info, and click Next <br/>
+![Homepage](Images/image1.35.png) <br/>
+
+#### 1.4.8: Select With Business Events for configuration request<br/>
+![Homepage](Images/image1.36.png) <br/>
+
+#### 1.4.9: In the Filter by Event Name field under Business Event For Subscription, search Purchase Order Event and select it <br/>
+![Homepage](Images/image1.37.png) <br/>
+
+#### 1.4.10: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc
+
+``` javascript 
+<xpathExpr xmlns:ns0="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/"              xmlns:ns2="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/types/">$eventPayload/ns2:result/ns0:Value/ns0:PurchaseOrderLine/ns0:ItemDescription="Doc"</xpathExpr>
+```
+<br/>
+
+Copy and paste the above script in the field and click Next <br/>
+![Homepage](Images/image1.38.png) <br/>
+
+
+#### 1.4.11: Select None in the response section <br/>
+![Homepage](Images/image1.39.png) <br/>
