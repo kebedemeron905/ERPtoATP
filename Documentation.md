@@ -93,7 +93,7 @@ Note: Make sure you save first before closing. <br/>
 ![Homepage](Images/image1.17.png) <br/>
 
 #### 1.2.6: Click on Configure Security <br/>
-![Homepage](Images/image1.17.png) <br/>
+![Homepage](Images/image1.80.1.png) <br/>
 
 #### 1.2.7: Upload wallet, provide wallet information, and click OK <br/>
 ![Homepage](Images/image1.18.png) <br/>
