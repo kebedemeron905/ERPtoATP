@@ -342,3 +342,31 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 
 #### 1.9.5: Select Enable tracing and include payload. Click Activate.<br/>
 ![Homepage](Images/image1.80.png) <br/>
+
+
+#### 1.10: Create a purchase order in ERP
+
+#### 1.10.1: Log into you ERP system <br/>
+![Homepage](Images/image1.81.png) <br/>
+
+#### 1.10.2: Select Procurement from the top navigation menu <br/>
+![Homepage](Images/image1.82.png) <br/>
+
+#### 1.10.3: Select Purchase Order under Procurement <br/>
+![Homepage](Images/image1.83.png) <br/>
+
+
+#### 1.10.4: Click on the hamburger menu to the top right <br/>
+![Homepage](Images/image1.84.png) <br/>
+
+#### 1.10.4: Select Create Order <br/>
+![Homepage](Images/image1.85.png) <br/>
+
+#### 1.10.5: Provide Supplier name and click Create <br/>
+![Homepage](Images/image1.86.png) <br/>
+
+#### 1.10.7: Provide Supplier name and click Create <br/>
+![Homepage](Images/image1.87.png) <br/>
+
+#### 1.10.8: Scroll down the Edit Document page and click on the plus sign under Lines <br/>
+![Homepage](Images/image1.85.png) <br/>
