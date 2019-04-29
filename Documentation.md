@@ -342,7 +342,7 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 ***
 <br/>
 
-#### 1.10: Create a purchase order in ERP
+### 1.10: Create a purchase order in ERP
 
 #### 1.10.1: Log into you ERP system <br/>
 ![Homepage](Images/image1.81.png) <br/>
@@ -367,4 +367,4 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 ![Homepage](Images/image1.87.png) <br/>
 
 #### 1.10.8: Scroll down the Edit Document page and click on the plus sign under Lines <br/>
-![Homepage](Images/image1.85.png) <br/>
+![Homepage](Images/image1.88.png) <br/>
