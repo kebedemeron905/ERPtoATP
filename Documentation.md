@@ -203,11 +203,9 @@ Copy and paste the script below in the Filter Expr for Purchase Order Event fiel
 
 #### 1.4.13: SAVE <br/>
 ![Homepage](Images/image1.40.png) <br/>
-
 <br/>
 ***
 <br/>
-
 
 #### 1.5: Hover on the grey line below the ERP adapter and click on the blue plus sign. Search you ATP adapter and click on it.<br/>
 ![Homepage](Images/image1.43.png) <br/>
@@ -276,7 +274,7 @@ Copy and paste the script below in the Filter Expr for Purchase Order Event fiel
 #### 1.7.2: Provide a name for the Function action, and click Create <br/>
 ![Homepage](Images/image1.61.png) <br/> 
 
-### 1.7.3: Click on the Function icon to upload your custom script <br/>
+#### 1.7.3: Click on the Function icon to upload your custom script <br/>
 NOTE: Make sure your custom script is registered in OIC under Libraries first. <br/>
 
 ![Homepage](Images/image1.62.png) <br/> 
@@ -298,12 +296,11 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 
 #### 1.7.9: SAVE <br/>
 ![Homepage](Images/image1.68.png) <br/>
-
 <br/>
 ***
 <br/>
 
-#### 1.8: Click on the mapper  <br/>
+#### 1.8: Click on the mapper GetPODetails <br/>
 ![Homepage](Images/image1.69.png) <br/>
 
 #### 1.8.2: Click on the pencil icon  <br/>
@@ -320,7 +317,6 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 
 #### 1.8.6: SAVE <br/>
 ![Homepage](Images/image1.74.png) <br/>
-
 <br/>
 ***
 <br/>
@@ -342,7 +338,9 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 
 #### 1.9.5: Select Enable tracing and include payload. Click Activate.<br/>
 ![Homepage](Images/image1.80.png) <br/>
-
+<br/>
+***
+<br/>
 
 #### 1.10: Create a purchase order in ERP
 
