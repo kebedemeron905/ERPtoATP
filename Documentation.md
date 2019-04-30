@@ -168,22 +168,19 @@ NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 #### 1.4.4: Provide integration name, and description (optional), and click Create <br/>
 ![Homepage](Images/image1.33.png) <br/>
 
-#### 1.4.5: Provide integration name, and description (optional), and click Create <br/>
-![Homepage](Images/image1.33.png) <br/>
-
-#### 1.4.6: Click on the blue plus sign under start and search for the ERP adapter you created <br/>
+#### 1.4.5: Click on the blue plus sign under start and search for the ERP adapter you created <br/>
 ![Homepage](Images/image1.34.png) <br/>
 
-#### 1.4.7: Provide endpoint name under Basic Info, and click Next <br/>
+#### 1.4.6: Provide endpoint name under Basic Info, and click Next <br/>
 ![Homepage](Images/image1.35.png) <br/>
 
-#### 1.4.8: Select With Business Events for configuration request<br/>
+#### 1.4.7: Select With Business Events for configuration request<br/>
 ![Homepage](Images/image1.36.png) <br/>
 
-#### 1.4.9: In the Filter by Event Name field under Business Event For Subscription, search Purchase Order Event and select it <br/>
+#### 1.4.8: In the Filter by Event Name field under Business Event For Subscription, search Purchase Order Event and select it <br/>
 ![Homepage](Images/image1.37.png) <br/>
 
-#### 1.4.10: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc <br/>
+#### 1.4.9: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc <br/>
 
 Copy and paste the script below in the Filter Expr for Purchase Order Event field and click Next <br/>
 
@@ -207,7 +204,7 @@ Copy and paste the script below in the Filter Expr for Purchase Order Event fiel
 ***
 <br/>
 
-#### 1.5: Hover on the grey line below the ERP adapter and click on the blue plus sign. Search you ATP adapter and click on it.<br/>
+#### 1.5: Hover on the grey line below the ERP adapter and click on the blue plus sign. Search your ATP adapter and click on it.<br/>
 ![Homepage](Images/image1.43.png) <br/>
 
 #### 1.5.1: Configure the ATP adapter's Basic Info as follows, and click Next <br/>
@@ -419,7 +416,7 @@ NOTE: For Configuration File, upload your ATP Wallet zip file.
 ***
 <br/>
 
-## 1.13 : Register Custom Script as a library under OIC Libraries <br/>
+## 1.13 : Register Custom Script as a Library Under OIC Libraries <br/>
 NOTE: a registered library can later be called as a function during integration. <br/>
 <br/>
 
