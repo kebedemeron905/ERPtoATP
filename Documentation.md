@@ -445,5 +445,4 @@ NOTE: a registered library can later be called as a function during integration.
 ***
 <br/>
 
-c
-This lab is now complete.
+This guide is now complete.
