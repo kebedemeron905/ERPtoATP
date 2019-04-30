@@ -259,8 +259,7 @@ Copy and paste the script below in the Filter Expr for Purchase Order Event fiel
 ![Homepage](Images/image1.57.png) <br/>
   
 #### 1.6.8: SAVE <br/>
-![Homepage](Images/image1.58.png) <br/>
-
+![Homepage](Images/image1.58.png)<br/>
 <br/>
 ***
 <br/>
@@ -275,7 +274,7 @@ Copy and paste the script below in the Filter Expr for Purchase Order Event fiel
 ![Homepage](Images/image1.61.png) <br/> 
 
 #### 1.7.3: Click on the Function icon to upload your custom script <br/>
-NOTE: Make sure your custom script is registered in OIC under Libraries first. <br/>
+NOTE: Make sure your custom script is registered in OIC under Libraries first. For instructions on how to register your custom script, refer to Section 1.13 at the end of this lab. <br/>
 
 ![Homepage](Images/image1.62.png) <br/> 
 
@@ -342,7 +341,7 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 ***
 <br/>
 
-### 1.10: Create a purchase order in ERP
+## 1.10: Create a Purchase Order in ERP
 
 #### 1.10.1: Log into you ERP system <br/>
 ![Homepage](Images/image1.81.png) <br/>
@@ -354,7 +353,7 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 ![Homepage](Images/image1.83.png) <br/>
 
 
-#### 1.10.4: Click on the hamburger menu to the top right <br/>
+#### 1.10.4: Click on the hamburger menu from the top right <br/>
 ![Homepage](Images/image1.84.png) <br/>
 
 #### 1.10.4: Select Create Order <br/>
@@ -385,7 +384,7 @@ NOTE: Make sure the Description matches the ItemDescription string you passed in
 ### 1.11 : Test if the Integration has run <br/>
 
 #### 1.11.1 : Go back to your list of integrations. Click on the back arrow  <br/>
-![Homepage](Images/image1.90.png) <br/>
+![Homepage](Images/image1.91.png) <br/>
 
 #### 1.11.2 : Click on Monitoring <br/>
 ![Homepage](Images/image1.92.png) <br/>
@@ -404,20 +403,47 @@ NOTE: Make sure the Description matches the ItemDescription string you passed in
 
 ### 1.12 : Confirm that the hashed and actual purchase order values are in ATP using SQLDeveloper <br/>
 
-#### 1.11.1 : Open SQLDeveloper, and enter the ATP database credentials with ATP as shown below. Make sure you're NOT on the VPN <br/>
+#### 1.12.1 : Open SQLDeveloper, and enter the ATP database credentials as shown below. Make sure you're NOT on the VPN <br/>
+NOTE: For Configuration File, upload your ATP Wallet zip file.
 ![Homepage](Images/image1.96.png) <br/>
 
-#### 1.11.2: Run the following SQL command in your worksheet
+#### 1.12.2: Run the following SQL command in your worksheet
 ![Homepage](Images/image1.97.png) <br/>
 
-#### 1.11.3: Identify your purchase order number
+#### 1.12.3: Identify your purchase order number
 ![Homepage](Images/image1.98.png) <br/>
 
-#### 1.11.4: Scroll to the right to view the hashed value under the hash column
-![Homepage](Images/image1.98.png) <br/>
+#### 1.12.4: Scroll to the right to view the hashed value under the hash column <br/>
+![Homepage](Images/image1.99.png) <br/>
 <br/>
 ***
 <br/>
 
+## 1.13 : Register Custom Script as a library under OIC Libraries <br/>
+NOTE: a registered library can later be called as a function during integration. <br/>
+<br/>
 
+#### 1.13.1: Under the Designer section menu, select Libraries <br/>
+![Homepage](Images/image1.100.png) <br/>
+<br/>
+
+#### 1.13.2: Click on Register from the top right corner <br/>
+![Homepage](Images/image1.101.png) <br/>
+<br/>
+
+#### 1.13.3: Select choose file and upload your custom script, provide library Name and click Create <br/>
+![Homepage](Images/image1.102.png) <br/>
+<br/>
+
+#### 1.13.4: Click Save, and close <br/>
+![Homepage](Images/image1.104.png) <br/>
+<br/>
+
+#### 1.13.5: Confirm that your registered library is listed under Libraries <br/>
+![Homepage](Images/image1.105.png) <br/>
+<br/>
+***
+<br/>
+
+c
 This lab is now complete.
