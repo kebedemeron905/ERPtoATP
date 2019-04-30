@@ -363,8 +363,61 @@ NOTE: Make sure your custom script is registered in OIC under Libraries first. <
 #### 1.10.5: Provide Supplier name and click Create <br/>
 ![Homepage](Images/image1.86.png) <br/>
 
-#### 1.10.7: Provide Supplier name and click Create <br/>
+#### 1.10.7: Scroll down the Edit Document page and click on the plus sign under Lines <br/>
 ![Homepage](Images/image1.87.png) <br/>
 
-#### 1.10.8: Scroll down the Edit Document page and click on the plus sign under Lines <br/>
+#### 1.10.8: Provide Description, Category Name, Quantity, UOM, and Price <br/>
+NOTE: Make sure the Description matches the ItemDescription string you passed in section 1.4.10 for the Filter Expr for Purchase Order Event field
 ![Homepage](Images/image1.88.png) <br/>
+
+#### 1.10.9: Click on Submit from the top right corner <br/>
+![Homepage](Images/image1.89.png) <br/>
+
+#### 1.10.9: Click on Submit from the top right corner <br/>
+![Homepage](Images/image1.89.png) <br/>
+
+#### 1.10.10: Note the purchase order number, and click OK on the confirmation message <br/>
+![Homepage](Images/image1.90.png) <br/>
+<br/>
+***
+<br/>
+
+### 1.11 : Test if the Integration has run <br/>
+
+#### 1.11.1 : Go back to your list of integrations. Click on the back arrow  <br/>
+![Homepage](Images/image1.90.png) <br/>
+
+#### 1.11.2 : Click on Monitoring <br/>
+![Homepage](Images/image1.92.png) <br/>
+
+#### 1.11.3 : Select Tracking <br/>
+![Homepage](Images/image1.93.png) <br/>
+
+#### 1.11.4 : Identify your integration by the Order Number. Click on the Order Number  <br/>
+![Homepage](Images/image1.94.png) <br/>
+
+#### 1.11.5 : Confirm the integration has run successfully, and click Close <br/>
+![Homepage](Images/image1.95.png) <br/>
+<br/>
+***
+<br/>
+
+### 1.12 : Confirm that the hashed and actual purchase order values are in ATP using SQLDeveloper <br/>
+
+#### 1.11.1 : Open SQLDeveloper, and enter the ATP database credentials with ATP as shown below. Make sure you're NOT on the VPN <br/>
+![Homepage](Images/image1.96.png) <br/>
+
+#### 1.11.2: Run the following SQL command in your worksheet
+![Homepage](Images/image1.97.png) <br/>
+
+#### 1.11.3: Identify your purchase order number
+![Homepage](Images/image1.98.png) <br/>
+
+#### 1.11.4: Scroll to the right to view the hashed value under the hash column
+![Homepage](Images/image1.98.png) <br/>
+<br/>
+***
+<br/>
+
+
+This lab is now complete.
