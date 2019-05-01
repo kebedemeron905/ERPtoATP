@@ -123,7 +123,7 @@ NOTE: The Oracle Integration Cloud Service user must exist in Oracle Integration
 Complete Documentation of how to generate a CSF key can be found [here](https://docs.oracle.com/en/cloud/paas/integration-cloud-service/icser/prerequisites-creating-connection.html#GUID-C179F26D-7409-43D7-B87B-E508A1DF7314).
 
 
-#### 1.3.1: To access SOA Composer, take your ERP domain name and append '/soa/composer' to it. Open in browser <br/>
+#### 1.3.1: To access SOA Composer, take your ERP domain name and append '/soa/composer' to it. Open in a new browser <br/>
 ![Homepage](Images/image1.24.png) <br/>
 
 #### 1.3.2: Log in using your ERP credentials <br/>
@@ -135,7 +135,7 @@ Complete Documentation of how to generate a CSF key can be found [here](https://
 #### 1.3.4: Provide the csf-key <br/>
 NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 
-#### 1.3.5: The OIC identity domain name and the OIC service instance name can both be found in OIC. In OIC, click on the person icon in the top corner of the OIC page, and select About <br/>
+#### 1.3.5: The OIC identity domain name and the OIC service instance name can both be found in OIC. In OIC, click on the person icon in the top corner of the page, and select About <br/>
 ![Homepage](Images/image1.27.png) <br/>
 
 #### 1.3.6: Copy and paste the domain name and service instance name into SOA Composer <br/>
@@ -145,7 +145,7 @@ NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 #### 1.3.7: This is how the csf-key should look in SOA Composer <br/>
 ![Homepage](Images/image1.29.png) <br/>
 
-#### 1.3.8: Enter the Oracle Integration Cloud Service user account with which you log in to Oracle Integration Cloud (not the user name created when you subscribed to Oracle ERP Cloud). Click Register <br/>
+#### 1.3.8: Enter the Oracle Integration Cloud credentials you used to login to OIC (not the user name created when you subscribed to Oracle ERP Cloud). Click Register <br/>
 ![Homepage](Images/image1.30.png) <br/>
 
 #### 1.3.9: Make sure the csf-key is successfully registered <br/>
