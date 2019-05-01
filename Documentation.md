@@ -182,7 +182,7 @@ NOTE: The CSF key = OIC Identity domain name / OIC service instance name <br/>
 
 #### 1.4.9: In the Filter Expr for Purchase Order Event field, provide a condition that will run your integration when your purchase order's item description is a specific string. In this example, it is Doc <br/>
 
-Copy and paste the script below in the Filter Expr for Purchase Order Event field and click Next <br/>
+Copy and paste the script below in the Filter Expr for Purchase Order Event field and click Next. You can specify a different string if you choose. <br/>
 
 ``` javascript 
 <xpathExpr xmlns:ns0="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/"           xmlns:ns2="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseOrderServiceV2/types/">$eventPayload/ns2:result/ns0:Value/ns0:PurchaseOrderLine/ns0:ItemDescription="Doc"</xpathExpr>
@@ -369,9 +369,6 @@ NOTE: Make sure the Description matches the ItemDescription string you passed in
 #### 1.10.9: Click on Submit from the top right corner <br/>
 ![Homepage](Images/image1.89.png) <br/>
 
-#### 1.10.9: Click on Submit from the top right corner <br/>
-![Homepage](Images/image1.89.png) <br/>
-
 #### 1.10.10: Note the purchase order number, and click OK on the confirmation message <br/>
 ![Homepage](Images/image1.90.png) <br/>
 <br/>
@@ -400,7 +397,8 @@ NOTE: Make sure the Description matches the ItemDescription string you passed in
 
 ### 1.12 : Confirm that the hashed and actual purchase order values are in ATP using SQLDeveloper <br/>
 
-#### 1.12.1 : Open SQLDeveloper, and enter the ATP database credentials as shown below. Make sure you're NOT on the VPN <br/>
+#### 1.12.1 : Open SQLDeveloper, and enter the ATP database credentials as shown below. Make sure you're NOT on the VPN. Test and Connect <br/>
+
 NOTE: For Configuration File, upload your ATP Wallet zip file.
 ![Homepage](Images/image1.96.png) <br/>
 
